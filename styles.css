@@ -1,0 +1,149 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+nav ul li {
+  padding: 0.5rem 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+}
+
+main {
+  padding: 1rem;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+/* Formulários */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form input, form textarea, form button {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Feed de desaparecidos */
+#missingPersons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+.missing-card {
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.missing-card h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.missing-card p {
+  margin: 0;
+}
+
+.missing-card .comments {
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #ccc;
+}
+
+.missing-card .comments p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.missing-card textarea {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.missing-card button {
+  margin-top: 0.5rem;
+  background-color: #007BFF;
+}
+
+.missing-card button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

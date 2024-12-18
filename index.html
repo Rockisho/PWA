@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Desaparecidos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Desaparecidos</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="feedLink">Feed</a></li>
+                <li><a href="#" id="registerLink">Cadastro</a></li>
+                <li><a href="#" id="loginLink">Login</a></li>
+                <li><a href="#" id="addMissingLink">Registrar Desaparecido</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Feed -->
+        <section id="feed" class="page">
+            <h2>Feed de Desaparecidos</h2>
+            <div id="missingPersons">
+                <!-- Publicações de desaparecidos serão exibidas aqui -->
+            </div>
+        </section>
+
+        <!-- Cadastro -->
+        <section id="register" class="page">
+            <h2>Cadastro de Usuário</h2>
+            <form id="registerForm">
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" id="username" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" required>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <!-- Login -->
+        <section id="login" class="page">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginUsername">Nome de Usuário:</label>
+                <input type="text" id="loginUsername" required>
+
+                <label for="loginPassword">Senha:</label>
+                <input type="password" id="loginPassword" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+
+        <!-- Registrar Desaparecido -->
+        <section id="addMissing" class="page">
+            <h2>Registrar Desaparecido</h2>
+            <form id="addMissingForm">
+                <label for="missingName">Nome:</label>
+                <input type="text" id="missingName" required>
+
+                <label for="missingDetails">Descrição:</label>
+                <textarea id="missingDetails" required></textarea>
+
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 App Desaparecidos</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
